@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Registre-se</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a href="login.html">
+          <div class="logo">
+            <h1>Carreira</h1>
+            <h2>Ún!ca</h2>
+          </div>
+        </a>
+
+        <nav class="primary">
+          <ul>
+            <li class="accounts">
+              <a href="register.html">
+                <i class="material-icons">account_circle</i>
+                Minha Conta
+              </a>
+            </li>
+            <li class="logout">
+              <a href="login.html">
+                <i class="material-icons">logout</i>
+                Sair
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="user-register container form">
+      <div class="header">
+        <h3>Registre-se</h3>
+      </div>
+      <form id="registerForm" action="/register" method="POST">
+        <div class="form-group">
+          <label>Nome Completo</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Digite seu nome completo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" name="email" placeholder="Digite seu email" required />
+        </div>
+        <div class="form-group">
+          <label>Senha</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Digite uma senha"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Repetir Senha</label>
+          <input
+            type="password"
+            name="passwordRepeat"
+            placeholder="Repita a senha"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>CPF OU CNPJ</label>
+          <input
+            type="text"
+            name="cpf_cnpj"
+            id="cpf_cnpj"
+            placeholder="Digite seu documento"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>CEP</label>
+          <input type="text" name="cep" placeholder="99999-999" required />
+        </div>
+
+        <div class="form-group">
+          <label>Endereço Completo</label>
+          <input
+            type="text"
+            name="address"
+            placeholder="Digite seu endereço completo"
+            required
+          />
+        </div>
+
+        <button class="button" type="submit">Salvar</button>
+      </form>
+    </section>
+
+    <footer></footer>
+    <script src="./libs/jquery-3.3.1.min.js"></script>
+    <script src="./libs/jquery.validate.min.js"></script>
+    <script src="./libs/jquery-validate-message.js"></script>
+    <script src="./libs/jquery.mask.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

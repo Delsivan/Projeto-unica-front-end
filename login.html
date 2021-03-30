@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <a href="home.html">
+          <div class="logo">
+            <h1>Carreira</h1>
+            <h2>Ún!ca</h2>
+          </div>
+        </a>
+
+        <nav class="primary">
+          <ul>
+            <li class="accounts">
+              <a href="register.html">
+                <i class="material-icons">account_circle</i>
+                Minha Conta
+              </a>
+            </li>
+            <li class="logout">
+              <a href="login.html">
+                <i class="material-icons">logout</i>
+                Sair
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="login container form">
+      <div class="header">
+        <h3>Entrar</h3>
+      </div>
+      <form method="POST" action="/login" id="formLogin">
+        
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          
+        <div class="form-group">
+          <label>Senha</label>
+            <input 
+            type="password" 
+            name="password" 
+            placeholder="Digite sua senha"/>
+            <span class="lnr lnr-eye"></span>
+        </div>
+
+        <div>
+          <input class="check-password" id="inputChangePassword" type="checkbox"/>
+          <label for="checkbox">Exibir senha</label>
+        </div>   
+      
+        <button class="button" type="submit">Entrar</button>
+
+        <div class="footer">
+          <ul>
+            <li>
+              <a href="register.html">Registre-se</a>
+            </li>
+            <li>
+              <a href="forget-password.html">Esqueci a senha</a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </section>
+
+    <script src="./libs/jquery-3.3.1.min.js"></script>
+    <script src="./libs/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+    
+    <footer></footer>
+  </body>
+</html>

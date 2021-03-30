@@ -1,0 +1,142 @@
+body{
+    color: #fff;
+}
+
+nav.primary{
+    width: auto;
+}
+
+nav.primary ul
+{   
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    list-style: none;
+
+}
+
+nav.primary ul li:first-child {
+    margin-right: 15px;
+}
+
+nav.primary ul li a{
+    display: flex; 
+    align-items: center;
+    
+
+    color: rgb(189, 184, 184);
+
+    transition: 200ms;
+}
+
+nav.primary ul li a:hover{
+    color: white;
+}
+
+.site-hero{
+    background: url(../images/home-bg10.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 750px;
+    height: 100vh;
+    position: relative;
+}
+
+.quick-info{
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.quick-info .bgcolor{
+    background: #000;
+    padding: 50px 0 30px;
+    position: relative;
+}
+
+.quick-info .bgcolor:after,
+.quick-info .bgcolor:before{
+    content: '';
+    background: inherit;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 140px;
+}
+
+.quick-info .bgcolor:after{
+    right: -140px;
+}
+.quick-info .bgcolor:before{
+    left: -140px;
+}
+
+.site-section{
+    padding: 3em 0;
+}
+.img-bg:hover{
+    text-decoration: none;
+}
+.site-section-categories a{
+    display: block;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.site-section-categories a .img-wrap{
+    position: relative;
+    top: 0;
+    transition: .2 all ease;
+    color: white;
+    
+}
+
+.site-section-categories a .img-wrap:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: .1;
+    transition: .2s all ease;
+}
+
+.site-section-categories a:hover .img-wrap:before{
+    opacity: .5;
+    
+}
+
+.site-section-categories .img-wrap p{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(0);
+    width: 100%;
+    opacity: 0;
+    display: inline-block;
+    text-align: center;
+    transition: .4 all ease;
+}
+
+.site-section-categories a:hover .img-wrap p{
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.section-cta{
+    background-image: url(../images/home-bg3.jpg);
+    background-size: cover;
+    height: 500px;
+    color: white;
+}
+
+.section-cta [type="email"]{
+    border-radius: 0;
+    background: rgba(255,255,255,.0)
+}
+
+.carousel slide{
+    position: absolute;
+    width: 100%;
+
+}
