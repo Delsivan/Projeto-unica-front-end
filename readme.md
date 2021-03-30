@@ -6,9 +6,9 @@ Projeto desenvolvido durante a realização do curso Carreira Única.
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - HTML
 - CSS
--JavaScript
--jQuery
--Bootstrap 4.6
+- JavaScript
+- jQuery
+- Bootstrap 4.6
 
 #### Página Login
 ![alt text for screen readers](/screens/login.png "Página login")
